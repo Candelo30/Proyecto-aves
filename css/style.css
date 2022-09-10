@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@700&display=swap');
+
+body {
+	position: relative;
+	margin: 0;
+}
+
+h1 {
+	color: #006BB9;
+	font-size: 2em;
+	letter-spacing: .2em;
+}
+
+input {
+	display: block;
+	margin: 12.5px 0;
+	padding-bottom: 5px;
+	border-top: none;
+	border-bottom: 5px #30A0E0 solid;
+	border-left: none;
+	border-right: none;
+	width: 100%;
+	background-color: #FFC973;
+	color: #000;
+	cursor: pointer;
+}
+
+label {
+	font-size: 1.2em;	
+}
+
+button {
+	padding: 10px;
+	margin: 10px;
+	width: 100%;	
+	border: groove 5px #30A0E0;
+	background-color: #FFC973;
+	font-size: 1.2em;
+	font-family: 'Bebas Neue', cursive;
+}
+
+
+
+.section-1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30%;
+	height: 100vh;
+
+	text-align: center;
+	background-image: url('https://images.unsplash.com/photo-1660322167244-96923d0c7c02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+}
+.section-2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 70%;
+	height: 100vh;
+	
+	background-color: #FFE3B3;
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+} 
+
+
+.container__form {
+	display: flex;
+	flex-direction: column;
+}

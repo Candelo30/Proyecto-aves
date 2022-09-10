@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 68px;
+	margin: 0;
+	font-family: georgia, times, serif;
+	font-size: 1.2rem;
+	line-height: 1.5em;
+	transition: ease all 2s;
+	scroll-behavior: smooth;
+}
+
+
+header {
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	top: 0;	
+	padding: 10px 0;
+	width: 100%;
+	background: #FFC973;
+
+}
+
+footer {
+	color: #FFF;
+	background: #333;
+	text-align: center;
+	padding: 4rem 0;
+	margin-top: 6rem; 
+}
+
+img {
+	width: 100%;
+}
+
+
+/* Scroll Down */
+
+.scroll-down {
+	height: 50px;
+	width: 30px;
+	border-radius: 50px;
+	border: 2.5px solid orange;
+	position: absolute;
+	left: 50%;
+	bottom: 35%;
+}
+
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-family: 'Lobster', cursive;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+/* Social */
+
+.Social {
+	z-index: 1;
+	text-align: center;
+	font-size: 1.5em;
+	position: fixed;
+	left: 0;
+	bottom: 210px;
+}
+
+.Social-content {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.fa-brands	{
+	width: 45px;
+	color: #FFF;
+	padding: 5px;
+}
+
+.fa-whatsapp {
+	background-color: #25D366;
+}
+
+.fa-facebook {
+	background-color: #3B5999;
+}
+
+.fa-discord {
+	background-color: #6e85d3;
+}
+
+.fa-instagram {
+	background-color: #E4405F;
+}
+
+
+.center {
+	text-align: center;
+}
+
+
+.title{
+	font-family: 'Mochiy Pop One', sans-serif;
+	margin-top: 18px;
+	padding-top: 70px;
+	font-size: 2rem;
+	line-height: 1.3em;
+}
+
+.index-img {
+	width: 72%;
+	padding: 10px 75px;
+}
+
+.img {
+	width: 310px;
+	height: 300px;
+}
+
+.ovf {
+	padding: 50px 50px;
+	background-color: #c0fff4;
+	overflow: auto;
+}
+.container {
+	width: 85%;
+	max-width: 957px; 
+	margin: 0 auto; 
+}
+
+
+.scroll {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #FFC973;
+    text-indent: -9999px;
+    display: block;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}
+
+
+.menu-icon {
+	display: none;
+}
+
+
+.scroll span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #333;
+}
+
+.header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+
+.menu a {
+	border-bottom: 5px transparent solid;
+	display: block;
+	padding: 0.5rem 1rem;
+	transition: all 0.4 linear;
+	border-radius: 5px; 
+}
+
+
+
+.scroll:hover {
+    background-color:#c0ffd5;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+.Social-content li:hover {
+	padding-left: 5px;
+	top: 20%;
+	left: 50%;
+	
+}
+
+
+.menu  a:hover {
+	border-bottom: 5px #30A0E0 solid;
+	background: #97cfef;
+}
+
+
+.scroll-down::before,
+.scroll-down::after {
+	content: '';
+	position: absolute;
+	top: 5%;
+	border: 2px solid orange;
+	height: 10px;
+	width: 10px;
+	transform: translate(50%, 50%) rotate(45deg);
+	border-top: transparent;
+	border-left: transparent;
+	animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+	top: 10%;
+	animation-delay: .3s;
+}
+
+@keyframes scroll-down {
+	0% {
+		opacity: 0;
+	}
+	
+	30% {
+		opacity: 1;
+	}
+	
+	40% {
+		opacity: 1;
+	}	
+	
+	60% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+		top: 60%;
+	}
+	
+}
+
+
+
+
+
+
